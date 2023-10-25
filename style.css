@@ -1,0 +1,809 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+body {
+  scroll-behavior: smooth;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.header {
+  background: #222222;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navigation button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.navLeftSide {
+  display: flex;
+  gap: 41px;
+}
+
+.navRightSide {
+  display: flex;
+  gap: 33px;
+  margin-top: 26px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+
+
+.navigation__messages {
+  width: 19px;
+  height: 19px;
+  background-color: #F16D7F;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  right: -10px;
+}
+
+.navigation__messages p {
+  font-family: Lato;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14px;
+  color: #FFFFFF;
+}
+
+.menu h2 {
+  color: #000;
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.main {
+  position: relative;
+}
+
+.hidden {
+  display: none;
+}
+
+.close__btn {
+  cursor: pointer;
+  border: none;
+  background: none;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+}
+
+.menu__active {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(244, 244, 244, 0.70);
+
+}
+
+.menu__active-all {
+  padding: 32px;
+  background: #FFF;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.gamburg-menu__title {
+  color: #000;
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+
+.gamburg-menu__text {
+  display: grid;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.gamburg-menu__text ul {
+  list-style-type: none;
+}
+
+.gamburg-menu__text h3 {
+  color: #F16D7F;
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.gamburg-menu__text a {
+  color: #6F6E6E;
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: 400;
+  margin-left: 22px;
+}
+
+
+.mainBanner {
+  background-color: #F1E4E6;
+}
+
+.containerBanner {
+  max-width: 1600px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  align-items: center;
+  gap: 64px;
+  margin: 0 auto;
+}
+
+.brandName {
+  border-left: 12px solid #F16D7F;
+  padding-left: 16px;
+}
+
+.brandName h1 {
+  color: #222;
+  font-family: Lato;
+  font-size: 48px;
+  font-weight: 900;
+}
+
+.brandName h2 {
+  font-family: Lato;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.styleBrandName {
+  color: #F16D7F;
+}
+
+.sale {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 30px;
+  margin-top: 65px;
+}
+
+.sale1Pic {
+  background-image: url(./img/backgroundForWomen.png);
+  width: 360px;
+  height: 260px;
+}
+
+.sale2Pic {
+  background-image: url(./img/backgroundForMen.png);
+  width: 360px;
+  height: 260px;
+}
+
+.sale3Pic {
+  background-image: url(./img/backgroundForKids.png);
+  width: 360px;
+  height: 260px;
+
+}
+
+.sale4Pic {
+  background-image: url(./img/backgroundAccesories.png);
+  width: 1140px;
+  height: 180px;
+  grid-column: span 3;
+}
+
+
+.saleLayer {
+  background-color: rgba(33, 22, 22, 0.70);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.saleText h2 {
+  color: #FFF;
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+
+}
+
+.saleText h3 {
+  color: #F16D7F;
+  font-family: Lato;
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.textContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 96px;
+  margin-bottom: 48px;
+  gap: 6px;
+}
+
+.textContent h2 {
+  color: #222;
+  font-family: Lato;
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.textContent p {
+  color: #9F9F9F;
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
+
+}
+
+.cardList {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 30px;
+  margin-bottom: 48px;
+}
+
+.card {
+  background-color: #F8F8F8;
+}
+
+.card1__img {
+  background-image: url(./img/card1.png);
+  width: 360px;
+  height: 420px;
+}
+
+.card2__img {
+  background-image: url(./img/card2.png);
+  width: 360px;
+  height: 420px;
+}
+
+.card3__img {
+  background-image: url(./img/card3.png);
+  width: 360px;
+  height: 420px;
+}
+
+.card4__img {
+  background-image: url(./img/card4.png);
+  width: 360px;
+  height: 420px;
+}
+
+.card5__img {
+  background-image: url(./img/card5.png);
+  width: 360px;
+  height: 420px;
+}
+
+.card6__img {
+  background-image: url(./img/card6.png);
+  width: 360px;
+  height: 420px;
+}
+
+
+.card:hover .card__layer {
+  display: flex;
+}
+
+.card__layer {
+  background-color: rgba(58, 56, 56, 0.86);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card__layer-btn {
+  border: 1px solid white;
+  background: transparent;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 11px;
+  padding: 10px 16px;
+}
+
+.card__layer-text p {
+  color: #FFF;
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.unvisitable {
+  display: none;
+}
+
+.cardText {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 24px 16px;
+}
+
+.cardText h2 {
+  font-family: Lato;
+  font-size: 13px;
+  font-weight: 400;
+
+}
+
+.cardText p {
+  color: #5D5D5D;
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: 300;
+
+}
+
+.cardText h3 {
+  color: #F16D7F;
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.allProductBtn {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 95px;
+}
+
+.allProductBtn button {
+  border: 1px solid #F16D7F;
+  background: #FFF;
+  cursor: pointer;
+}
+
+.allProductBtn p {
+  padding: 15px 39px;
+  color: #F26376;
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.2px;
+}
+
+.allProductBtn button:hover {
+  border: 1px solid #FF6A6A;
+  background: #F16D7F;
+}
+
+.allProductBtn button:hover p {
+  color: #FFF;
+}
+
+.advantage {
+  background-color: #222224;
+}
+
+.advantage__list {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 104px 0;
+}
+
+.advantage__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 360px;
+}
+
+.advantage__card h2 {
+  color: #FBFBFB;
+  font-family: Lato;
+  font-size: 20px;
+  font-weight: 400;
+  margin-top: 25px;
+  margin-bottom: 16px;
+}
+
+.advantage__card p {
+  color: #FBFBFB;
+  text-align: center;
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.subscribe {
+  background-image: url(./img/bg-serf.png);
+  display: flex;
+  justify-content: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 0;
+}
+
+.subscribe__bg-layer {
+  background-color: rgba(244, 244, 244, 0.70);
+  width: 100%;
+  height: 100%;
+}
+
+.subscribe__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 97px;
+  padding-bottom: 126px;
+}
+
+.subscribe__leftSide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.subscribe__leftSide p {
+  color: #222224;
+  text-align: center;
+  font-family: Lato;
+  font-size: 20px;
+  font-weight: 400;
+  max-width: 360px;
+}
+
+.subscribe__leftSide-italic {
+  font-style: italic;
+}
+
+.subscribe__rightSide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+}
+
+
+.subscribe__rightSide-text h2 {
+  color: #222224;
+  text-align: center;
+  font-family: Lato;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 40px;
+}
+
+.subscribe__rightSide-text h3 {
+  color: #222224;
+  font-family: Lato;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 40px;
+}
+
+.input {
+  display: flex;
+  gap: 0;
+}
+
+.input__email {
+  background-color: #E1E1E1;
+  padding: 14px 22px;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border: none;
+}
+
+.input__btn {
+  background-color: #F16D7F;
+  padding: 7px 20px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border: none;
+  cursor: pointer;
+}
+
+.input__btn p {
+  color: #FFF;
+  text-align: center;
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.footer {
+  background-color: #222224;
+
+}
+
+.footer__content {
+  background-color: #222224;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 28px 0;
+}
+
+.footer__leftSide p {
+  color: #FBFBFB;
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.footer__rightSide {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+}
+
+.footer__logo {
+  width: 32px;
+  height: 32px;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer__logo:hover {
+  background-color: #F16D7F;
+}
+
+.footer__logo:hover svg {
+  fill: white;
+}
+
+@media (max-width: 1160px) and (min-width: 768px) {
+
+  .container {
+    max-width: 736px;
+  }
+
+
+
+  .containerBanner {
+    max-width: 768px;
+    gap: 39px;
+  }
+
+
+  .brandName h1 {
+    font-size: 44px;
+  }
+
+  .brandName h2 {
+    font-size: 24px;
+  }
+
+  .sale {
+    gap: 20px;
+  }
+
+  .sale1Pic {
+    width: 232px;
+    height: 168px;
+    background-size: cover;
+  }
+
+  .sale2Pic {
+    width: 232px;
+    height: 168px;
+    background-size: cover;
+  }
+
+  .sale3Pic {
+    width: 232px;
+    height: 168px;
+    background-size: cover;
+  }
+
+  .sale4Pic {
+    width: 735px;
+    height: 116px;
+    background-size: cover;
+  }
+
+  .saleText {
+    margin: 59px auto;
+  }
+
+  .saleText-4 {
+    margin: 33px auto;
+  }
+
+  .textContent {
+    margin-top: 110px;
+    margin-bottom: 73px;
+    gap: 3px;
+  }
+
+  .cardList {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 16px;
+    margin-bottom: 33px;
+  }
+
+
+  .allProductBtn {
+    margin-bottom: 65px;
+  }
+
+  .advantage__list {
+    flex-direction: column;
+    align-items: center;
+    gap: 48px;
+    margin-top: 48px;
+    margin-bottom: 64px;
+  }
+
+  .subscribe__content {
+    flex-direction: column;
+    align-items: center;
+    gap: 48px;
+    padding-top: 64px;
+    padding-bottom: 140px;
+  }
+
+  .subscribe__rightSide {
+    gap: 27px;
+  }
+
+
+
+}
+
+
+@media (max-width: 767px) {
+
+  .container {
+    max-width: 360px;
+  }
+
+  .navRightSide button:not(.user-list__item-menu) {
+    display: none;
+  }
+
+  .mainBanner__pic {
+    display: none;
+  }
+
+  .containerBanner {
+    display: flex;
+    justify-content: center;
+    padding: 148px;
+  }
+
+  .brandName h1 {
+    font-size: 38px;
+  }
+
+  .brandName h2 {
+    font-size: 20px;
+  }
+
+  .sale1Pic {
+    width: 343px;
+    height: 247px;
+    background-size: cover;
+  }
+
+  .sale2Pic {
+    width: 343px;
+    height: 247px;
+    background-size: cover;
+  }
+
+  .sale3Pic {
+    width: 343px;
+    height: 247px;
+    background-size: cover;
+  }
+
+  .sale4Pic {
+    width: 343px;
+    height: 111px;
+    background-size: cover;
+  }
+
+  .sale {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+  }
+
+
+  .textContent {
+    margin: 64px;
+    gap: 3px;
+  }
+
+
+
+  .cardList {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 17px;
+    margin-bottom: 41px;
+  }
+
+  .advantage__list {
+    flex-direction: column;
+    align-items: center;
+    gap: 48px;
+    padding-top: 48px;
+    padding-bottom: 81x;
+  }
+
+  .subscribe__content {
+    flex-direction: column;
+    align-items: center;
+    gap: 59px;
+    padding-bottom: 110px;
+  }
+
+  .subscribe__leftSide p {
+    font-size: 18px;
+    max-width: 343px;
+  }
+
+  .subscribe__rightSide {
+    gap: 22px;
+  }
+
+  .subscribe__rightSide-text h2 {
+    line-height: 37px;
+  }
+
+  .subscribe__rightSide-text h3 {
+    font-size: 14px;
+    line-height: 37px;
+  }
+
+
+  .footer__content {
+    flex-direction: column-reverse;
+    gap: 40px;
+    padding-top: 43px;
+    padding-bottom: 9px;
+  }
+
+
+}
