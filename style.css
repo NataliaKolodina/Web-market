@@ -34,12 +34,12 @@ img {
   cursor: pointer;
 }
 
-.navLeftSide {
+.navigation__left-side {
   display: flex;
   gap: 41px;
 }
 
-.navRightSide {
+.navigation__right-side {
   display: flex;
   gap: 33px;
   margin-top: 26px;
@@ -49,7 +49,7 @@ img {
 
 
 
-.navigation__messages {
+.navigation__basket_messages {
   width: 19px;
   height: 19px;
   background-color: #F16D7F;
@@ -62,19 +62,12 @@ img {
   right: -10px;
 }
 
-.navigation__messages p {
+.navigation__basket_messages p {
   font-family: Lato;
   font-size: 12px;
   font-weight: 400;
   line-height: 14px;
   color: #FFFFFF;
-}
-
-.menu h2 {
-  color: #000;
-  font-family: Lato;
-  font-size: 14px;
-  font-weight: 700;
 }
 
 .main {
@@ -112,7 +105,7 @@ img {
   top: 0;
 }
 
-.gamburg-menu__title {
+.menu-gamburg__title {
   color: #000;
   font-family: Lato;
   font-size: 14px;
@@ -120,24 +113,24 @@ img {
   margin-bottom: 24px;
 }
 
-.gamburg-menu__text {
+.menu-gamburg__text {
   display: grid;
   gap: 12px;
   margin-bottom: 20px;
 }
 
-.gamburg-menu__text ul {
+.menu-gamburg__text ul {
   list-style-type: none;
 }
 
-.gamburg-menu__text h3 {
+.menu-gamburg__text h3 {
   color: #F16D7F;
   font-family: Lato;
   font-size: 14px;
   font-weight: 400;
 }
 
-.gamburg-menu__text a {
+.menu-gamburg__text a {
   color: #6F6E6E;
   font-family: Lato;
   font-size: 14px;
@@ -146,11 +139,11 @@ img {
 }
 
 
-.mainBanner {
+.main-banner {
   background-color: #F1E4E6;
 }
 
-.containerBanner {
+.banner__container {
   max-width: 1600px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -160,25 +153,25 @@ img {
   margin: 0 auto;
 }
 
-.brandName {
+.banner__brand-name {
   border-left: 12px solid #F16D7F;
   padding-left: 16px;
 }
 
-.brandName h1 {
+.banner__brand-name h1 {
   color: #222;
   font-family: Lato;
   font-size: 48px;
   font-weight: 900;
 }
 
-.brandName h2 {
+.banner__brand-name h2 {
   font-family: Lato;
   font-size: 32px;
   font-weight: 700;
 }
 
-.styleBrandName {
+.brand-name_style {
   color: #F16D7F;
 }
 
@@ -190,26 +183,26 @@ img {
   margin-top: 65px;
 }
 
-.sale1Pic {
+.sale__1pic {
   background-image: url(./img/backgroundForWomen.png);
   width: 360px;
   height: 260px;
 }
 
-.sale2Pic {
+.sale__2pic {
   background-image: url(./img/backgroundForMen.png);
   width: 360px;
   height: 260px;
 }
 
-.sale3Pic {
+.sale__3pic {
   background-image: url(./img/backgroundForKids.png);
   width: 360px;
   height: 260px;
 
 }
 
-.sale4Pic {
+.sale__4pic {
   background-image: url(./img/backgroundAccesories.png);
   width: 1140px;
   height: 180px;
@@ -217,7 +210,7 @@ img {
 }
 
 
-.saleLayer {
+.sale__layer {
   background-color: rgba(33, 22, 22, 0.70);
   width: 100%;
   height: 100%;
@@ -227,7 +220,7 @@ img {
 
 }
 
-.saleText h2 {
+.sale__text h2 {
   color: #FFF;
   font-family: Lato;
   font-size: 16px;
@@ -236,7 +229,7 @@ img {
 
 }
 
-.saleText h3 {
+.sale__text h3 {
   color: #F16D7F;
   font-family: Lato;
   font-size: 24px;
@@ -244,7 +237,7 @@ img {
   text-align: center;
 }
 
-.textContent {
+.text-content {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -253,14 +246,14 @@ img {
   gap: 6px;
 }
 
-.textContent h2 {
+.text-content h2 {
   color: #222;
   font-family: Lato;
   font-size: 30px;
   font-weight: 400;
 }
 
-.textContent p {
+.text-content p {
   color: #9F9F9F;
   font-family: Lato;
   font-size: 14px;
@@ -269,7 +262,7 @@ img {
 
 }
 
-.cardList {
+.card-list {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
@@ -342,32 +335,32 @@ img {
   padding: 10px 16px;
 }
 
-.card__layer-text p {
+.card__layer-text {
   color: #FFF;
   font-family: Lato;
   font-size: 14px;
   font-weight: 400;
 }
 
-.unvisitable {
+.card-unvisitable {
   display: none;
 }
 
-.cardText {
+.card__text {
   display: flex;
   flex-direction: column;
   gap: 16px;
   padding: 24px 16px;
 }
 
-.cardText h2 {
+.card__text h2 {
   font-family: Lato;
   font-size: 13px;
   font-weight: 400;
 
 }
 
-.cardText p {
+.card__text p {
   color: #5D5D5D;
   font-family: Lato;
   font-size: 14px;
@@ -375,26 +368,23 @@ img {
 
 }
 
-.cardText h3 {
+.card__text h3 {
   color: #F16D7F;
   font-family: Lato;
   font-size: 16px;
   font-weight: 400;
 }
 
-.allProductBtn {
+.all-product {
   display: flex;
   justify-content: center;
   margin-bottom: 95px;
 }
 
-.allProductBtn button {
+.all-product button {
   border: 1px solid #F16D7F;
   background: #FFF;
   cursor: pointer;
-}
-
-.allProductBtn p {
   padding: 15px 39px;
   color: #F26376;
   font-family: Lato;
@@ -403,12 +393,14 @@ img {
   line-height: 19.2px;
 }
 
-.allProductBtn button:hover {
+
+
+.all-product button:hover {
   border: 1px solid #FF6A6A;
   background: #F16D7F;
 }
 
-.allProductBtn button:hover p {
+.all-product button:hover p {
   color: #FFF;
 }
 
@@ -470,14 +462,14 @@ img {
   padding-bottom: 126px;
 }
 
-.subscribe__leftSide {
+.subscribe__left-side {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 30px;
 }
 
-.subscribe__leftSide p {
+.subscribe__left-side p {
   color: #222224;
   text-align: center;
   font-family: Lato;
@@ -486,7 +478,7 @@ img {
   max-width: 360px;
 }
 
-.subscribe__leftSide-italic {
+.subscribe__left-side_italic {
   font-style: italic;
 }
 
@@ -498,7 +490,7 @@ img {
 }
 
 
-.subscribe__rightSide-text h2 {
+.subscribe__right-side_text h2 {
   color: #222224;
   text-align: center;
   font-family: Lato;
@@ -507,7 +499,7 @@ img {
   line-height: 40px;
 }
 
-.subscribe__rightSide-text h3 {
+.subscribe__right-side_text h3 {
   color: #222224;
   font-family: Lato;
   font-size: 18px;
@@ -535,9 +527,6 @@ img {
   border-bottom-right-radius: 15px;
   border: none;
   cursor: pointer;
-}
-
-.input__btn p {
   color: #FFF;
   text-align: center;
   font-family: Lato;
@@ -558,14 +547,14 @@ img {
   padding: 28px 0;
 }
 
-.footer__leftSide p {
+.footer__left-side p {
   color: #FBFBFB;
   font-family: Lato;
   font-size: 16px;
   font-weight: 400;
 }
 
-.footer__rightSide {
+.footer__right-side {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -597,17 +586,17 @@ img {
 
 
 
-  .containerBanner {
+  .banner__container {
     max-width: 768px;
     gap: 39px;
   }
 
 
-  .brandName h1 {
+  .banner__brand-name h1 {
     font-size: 44px;
   }
 
-  .brandName h2 {
+  .banner__brand-name h2 {
     font-size: 24px;
   }
 
@@ -615,45 +604,45 @@ img {
     gap: 20px;
   }
 
-  .sale1Pic {
+  .sale__1pic {
     width: 232px;
     height: 168px;
     background-size: cover;
   }
 
-  .sale2Pic {
+  .sale__2pic {
     width: 232px;
     height: 168px;
     background-size: cover;
   }
 
-  .sale3Pic {
+  .sale__3pic {
     width: 232px;
     height: 168px;
     background-size: cover;
   }
 
-  .sale4Pic {
+  .sale__4pic {
     width: 735px;
     height: 116px;
     background-size: cover;
   }
 
-  .saleText {
+  .sale__text {
     margin: 59px auto;
   }
 
-  .saleText-4 {
+  .sale__text-4 {
     margin: 33px auto;
   }
 
-  .textContent {
+  .text-content {
     margin-top: 110px;
     margin-bottom: 73px;
     gap: 3px;
   }
 
-  .cardList {
+  .card-list {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
     gap: 16px;
@@ -661,7 +650,7 @@ img {
   }
 
 
-  .allProductBtn {
+  .all-product {
     margin-bottom: 65px;
   }
 
@@ -681,7 +670,7 @@ img {
     padding-bottom: 140px;
   }
 
-  .subscribe__rightSide {
+  .subscribe__right-side {
     gap: 27px;
   }
 
@@ -696,50 +685,30 @@ img {
     max-width: 360px;
   }
 
-  .navRightSide button:not(.user-list__item-menu) {
+  .navigation__right-side button:not(.user-list__item-menu) {
     display: none;
   }
 
-  .mainBanner__pic {
+  .navigation__basket_messages {
     display: none;
   }
 
-  .containerBanner {
+  .main-banner__pic {
+    display: none;
+  }
+
+  .banner__container {
     display: flex;
     justify-content: center;
     padding: 148px;
   }
 
-  .brandName h1 {
+  .banner__brand-name h1 {
     font-size: 38px;
   }
 
-  .brandName h2 {
+  .banner__brand-name h2 {
     font-size: 20px;
-  }
-
-  .sale1Pic {
-    width: 343px;
-    height: 247px;
-    background-size: cover;
-  }
-
-  .sale2Pic {
-    width: 343px;
-    height: 247px;
-    background-size: cover;
-  }
-
-  .sale3Pic {
-    width: 343px;
-    height: 247px;
-    background-size: cover;
-  }
-
-  .sale4Pic {
-    width: 343px;
-    height: 111px;
-    background-size: cover;
   }
 
   .sale {
@@ -749,15 +718,36 @@ img {
     gap: 32px;
   }
 
+  .sale__1pic {
+    width: 343px;
+    height: 247px;
+    background-size: cover;
+  }
 
-  .textContent {
+  .sale__2pic {
+    width: 343px;
+    height: 247px;
+    background-size: cover;
+  }
+
+  .sale__3pic {
+    width: 343px;
+    height: 247px;
+    background-size: cover;
+  }
+
+  .sale__4pic {
+    width: 343px;
+    height: 111px;
+    background-size: cover;
+  }
+
+  .text-content {
     margin: 64px;
     gap: 3px;
   }
 
-
-
-  .cardList {
+  .card-list {
     grid-template-columns: 1fr;
     justify-items: center;
     gap: 17px;
@@ -784,15 +774,15 @@ img {
     max-width: 343px;
   }
 
-  .subscribe__rightSide {
+  .subscribe__right-side {
     gap: 22px;
   }
 
-  .subscribe__rightSide-text h2 {
+  .subscribe__right-side_text h2 {
     line-height: 37px;
   }
 
-  .subscribe__rightSide-text h3 {
+  .subscribe__right-side_text h3 {
     font-size: 14px;
     line-height: 37px;
   }
