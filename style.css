@@ -184,26 +184,26 @@ img {
 }
 
 .sale__1pic {
-  background-image: url(./img/backgroundForWomen.png);
+  background-image: url(./img/backgroundForWomen.webp);
   width: 360px;
   height: 260px;
 }
 
 .sale__2pic {
-  background-image: url(./img/backgroundForMen.png);
+  background-image: url(./img/backgroundForMen.webp);
   width: 360px;
   height: 260px;
 }
 
 .sale__3pic {
-  background-image: url(./img/backgroundForKids.png);
+  background-image: url(./img/backgroundForKids.webp);
   width: 360px;
   height: 260px;
 
 }
 
 .sale__4pic {
-  background-image: url(./img/backgroundAccesories.png);
+  background-image: url(./img/backgroundAccesories.webp);
   width: 1140px;
   height: 180px;
   grid-column: span 3;
@@ -275,37 +275,37 @@ img {
 }
 
 .card1__img {
-  background-image: url(./img/card1.png);
+  background-image: url(./img/card1.webp);
   width: 360px;
   height: 420px;
 }
 
 .card2__img {
-  background-image: url(./img/card2.png);
+  background-image: url(./img/card2.webp);
   width: 360px;
   height: 420px;
 }
 
 .card3__img {
-  background-image: url(./img/card3.png);
+  background-image: url(./img/card3.webp);
   width: 360px;
   height: 420px;
 }
 
 .card4__img {
-  background-image: url(./img/card4.png);
+  background-image: url(./img/card4.webp);
   width: 360px;
   height: 420px;
 }
 
 .card5__img {
-  background-image: url(./img/card5.png);
+  background-image: url(./img/card5.webp);
   width: 360px;
   height: 420px;
 }
 
 .card6__img {
-  background-image: url(./img/card6.png);
+  background-image: url(./img/card6.webp);
   width: 360px;
   height: 420px;
 }
@@ -440,7 +440,7 @@ img {
 }
 
 .subscribe {
-  background-image: url(./img/bg-serf.png);
+  background-image: url(./img/bg-serf.webp);
   display: flex;
   justify-content: center;
   background-repeat: no-repeat;
@@ -482,7 +482,7 @@ img {
   font-style: italic;
 }
 
-.subscribe__rightSide {
+.subscribe__right-side {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -785,6 +785,10 @@ img {
   .subscribe__right-side_text h3 {
     font-size: 14px;
     line-height: 37px;
+  }
+
+  .input {
+    max-width: 320px;
   }
 
 
